@@ -26,6 +26,18 @@
     --font-subtitulo: 'Nunito', sans-serif;
     --font-texto: 'Open Sans', sans-serif;
     
+    /* Hierarquia Tipográfica */
+    --h1-size-desktop: 44px;
+    --h1-size-mobile: 30px;
+    --h2-size-desktop: 30px;
+    --h2-size-mobile: 24px;
+    --h3-size-desktop: 23px;
+    --h3-size-mobile: 19px;
+    --paragraph-size-desktop: 17px;
+    --paragraph-size-mobile: 16px;
+    --button-size: 17px;
+    --quote-size: 17px;
+    
     /* Espaçamentos */
     --container-padding: 2rem;
     --section-padding: 6rem 0;
@@ -50,6 +62,78 @@ body {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+/* Hierarquia Tipográfica */
+h1 {
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: var(--h1-size-desktop);
+    color: var(--verde-escuro);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: var(--h2-size-desktop);
+    color: var(--verde-escuro);
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: var(--font-subtitulo);
+    font-weight: 600;
+    font-size: var(--h3-size-desktop);
+    color: var(--verde-salgia);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: var(--font-texto);
+    font-weight: 400;
+    font-size: var(--paragraph-size-desktop);
+    color: var(--cinza-grafite);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: var(--button-size);
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.quote, blockquote {
+    font-family: var(--font-subtitulo);
+    font-style: italic;
+    font-size: var(--quote-size);
+    color: var(--verde-escuro);
+    line-height: 1.5;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--h1-size-mobile);
+    }
+    
+    h2 {
+        font-size: var(--h2-size-mobile);
+    }
+    
+    h3 {
+        font-size: var(--h3-size-mobile);
+    }
+    
+    p {
+        font-size: var(--paragraph-size-mobile);
+    }
 }
 
 /* Loading Screen */
