@@ -30,29 +30,34 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
+    <header class="header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
                     <a href="index.html">
-                        <h1>Vinícius Moraes</h1>
+                        <h3>Vinícius Moraes</h3>
                         <span>Emagrecimento Saudável</span>
                     </a>
                 </div>
-                <nav class="nav">
-                    <a href="index.html" class="nav-link">
-                        <i class="fas fa-home"></i>
-                        <span>Início</span>
-                    </a>
-                    <a href="produtos.html" class="nav-link">
-                        <i class="fas fa-box"></i>
-                        <span>Produtos</span>
-                    </a>
-                    <a href="contato.html" class="nav-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contato</span>
-                    </a>
-                </nav>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-cta">
+                <a href="contato.html#consulta" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt"></i>
+                    Consulta Gratuita
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </header>
@@ -566,5 +571,6 @@
 
     <!-- Scripts -->
     <script src="script-termos.js"></script>
+    <script src="script-pages.js"></script>
 </body>
 </html>
