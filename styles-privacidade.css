@@ -6,51 +6,47 @@
 }
 
 :root {
-    /* Brand Colors */
-    --primary-green: #6BAA75;
-    --dark-green: #264E36;
-    --light-beige: #F6F1EB;
-    --graphite-gray: #3A3A3A;
-    --soft-yellow: #F2C94C;
+    /* Paleta de cores */
+    --verde-salgia: #6BAA75;
+    --verde-escuro: #264E36;
+    --bege-claro: #F6F1EB;
+    --cinza-grafite: #3A3A3A;
+    --amarelo-suave: #F2C94C;
     
-    /* Additional Colors */
-    --white: #FFFFFF;
-    --light-gray: #F8F9FA;
-    --medium-gray: #6C757D;
-    --border-color: #E9ECEF;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(0, 0, 0, 0.15);
+    /* Cores adicionais para versão D */
+    --verde-claro: #8BC34A;
+    --azul-claro: #2196F3;
+    --roxo-claro: #9C27B0;
+    --laranja-claro: #FF9800;
     
-    /* Typography */
-    --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Nunito', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    /* Tipografia */
+    --font-titulo: 'Poppins', sans-serif;
+    --font-subtitulo: 'Nunito', sans-serif;
+    --font-texto: 'Open Sans', sans-serif;
     
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --spacing-xxl: 4rem;
+    /* Espaçamentos */
+    --container-padding: 2rem;
+    --section-padding: 6rem 0;
     
-    /* Border Radius */
-    --radius-sm: 0.375rem;
-    --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-xl: 1rem;
+    /* Sombras */
+    --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-heavy: 0 15px 50px rgba(0, 0, 0, 0.15);
+    --shadow-3d: 0 20px 60px rgba(0, 0, 0, 0.2);
     
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-normal: 0.3s ease;
-    --transition-slow: 0.5s ease;
+    /* Transições */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+    --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 body {
-    font-family: var(--font-body);
-    color: var(--graphite-gray);
+    font-family: var(--font-texto);
+    color: var(--cinza-grafite);
     line-height: 1.6;
-    background-color: var(--light-gray);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -302,7 +298,7 @@ body {
 
 /* Header da página */
 .page-header {
-    background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-salgia) 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -311,7 +307,7 @@ body {
 .header-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: var(--font-primary);
+    font-family: var(--font-titulo);
 }
 
 .header-subtitle {
@@ -341,9 +337,9 @@ body {
 
 /* Conteúdo principal */
 .main-content {
-    padding: var(--spacing-xxl) 0;
+    padding: 4rem 0;
     background: var(--white);
-    padding-top: calc(var(--spacing-xxl) + 80px);
+    padding-top: calc(4rem + 80px);
 }
 
 .content-wrapper {
