@@ -1136,12 +1136,18 @@ p {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 .price-currency {
     font-size: 1.5rem;
     color: var(--verde-salgia);
     font-weight: 600;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 .price-value {
@@ -1149,12 +1155,18 @@ p {
     font-weight: 800;
     color: var(--verde-escuro);
     font-family: var(--font-titulo);
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 .price-range {
     font-size: 1.2rem;
     color: var(--cinza-grafite);
     font-weight: 500;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 .product-description {
@@ -1328,10 +1340,36 @@ p {
     font-size: 1.1rem;
     color: var(--verde-escuro);
     justify-content: center;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 .cta-row .cta-cell {
     justify-content: center;
+}
+
+/* Remover animações dos preços */
+.product-price *,
+.price-currency,
+.price-value,
+.price-range,
+.price-cell,
+[class*="price"] {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Manter apenas o hover do card pai, mas sem afetar os preços */
+.product-card:hover .product-price,
+.product-card:hover .product-price *,
+.product-card:hover .price-currency,
+.product-card:hover .price-value,
+.product-card:hover .price-range {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
 }
 
 /* Final CTA */
