@@ -1,10 +1,10 @@
-// Header scroll effect
+// Navbar scroll effect
 window.addEventListener('scroll', function() {
-    const header = document.getElementById('navbar');
-    if (header && window.scrollY > 100) {
-        header.classList.add('scrolled');
-    } else if (header) {
-        header.classList.remove('scrolled');
+    const navbar = document.getElementById('navbar');
+    if (navbar && window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+    } else if (navbar) {
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -38,8 +38,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const headerHeight = document.getElementById('navbar') ? document.getElementById('navbar').offsetHeight : 0;
-            const targetPosition = target.offsetTop - headerHeight - 20;
+            const navbarHeight = document.getElementById('navbar') ? document.getElementById('navbar').offsetHeight : 0;
+            const targetPosition = target.offsetTop - navbarHeight - 20;
             
             window.scrollTo({
                 top: targetPosition,
