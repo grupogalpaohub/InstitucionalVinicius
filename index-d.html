@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Moraes | Emagrecimento Saudável — Nutrição sem complicação</title>
+    <meta name="description" content="Nutricionista que traduz nutrição em linguagem simples. E-book gratuito, consultas e programas em grupo. Emagreça com clareza, leveza e rotina.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viniciusmoraes.com.br/">
+    <meta property="og:title" content="Vinícius Moraes | Emagrecimento Saudável — Nutrição sem complicação">
+    <meta property="og:description" content="Nutricionista que traduz nutrição em linguagem simples. E-book gratuito, consultas e programas em grupo. Emagreça com clareza, leveza e rotina.">
+    <meta property="og:image" content="og_vinicius.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://viniciusmoraes.com.br/">
+    <meta property="twitter:title" content="Vinícius Moraes | Emagrecimento Saudável — Nutrição sem complicação">
+    <meta property="twitter:description" content="Nutricionista que traduz nutrição em linguagem simples. E-book gratuito, consultas e programas em grupo. Emagreça com clareza, leveza e rotina.">
+    <meta property="twitter:image" content="og_vinicius.jpg">
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#6BAA75">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Vinícius Moraes">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vinícius Moraes",
+        "jobTitle": "Nutricionista",
+        "description": "Nutricionista especialista em emagrecimento saudável que traduz nutrição em linguagem simples para pessoas reais.",
+        "url": "https://viniciusmoraes.com.br",
+        "image": "https://viniciusmoraes.com.br/hero_vini.jpg",
+        "sameAs": [
+            "https://instagram.com/viniciusmoraes",
+            "https://youtube.com/viniciusmoraes",
+            "https://wa.me/5511999999999"
+        ],
+        "knowsAbout": [
+            "Nutrição",
+            "Emagrecimento Saudável",
+            "Educação Nutricional",
+            "Consultoria Nutricional"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Nutricionista",
+            "description": "Especialista em emagrecimento saudável e educação nutricional"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Vinícius Moraes | Emagrecimento Saudável"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Nunito:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles-d.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <div class="loading-text">Vinícius Moraes</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <h3>Vinícius Moraes</h3>
+                    <span>Emagrecimento Saudável</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#metodologia" class="nav-link">Metodologia</a>
+                <a href="#calculadora" class="nav-link">Calculadora</a>
+                <a href="#transformacoes" class="nav-link">Transformações</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#consulta" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt"></i>
+                    Consulta Gratuita
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Educador Realista</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Nutrição sem complicação,</span>
+                        <span class="title-line highlight">para pessoas reais.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Eu sou Vinícius Moraes, nutricionista. Ajudo pessoas comuns a emagrecerem e comerem melhor com clareza, leveza e rotina — sem terrorismo alimentar.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#calculadora" class="btn btn-primary">
+                            <i class="fas fa-calculator"></i>
+                            Calcular meu IMC
+                        </a>
+                        <a href="#consulta" class="btn btn-secondary">
+                            <i class="fas fa-video"></i>
+                            Consulta Gratuita
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-label">Pessoas transformadas</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">% de satisfação</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="image-container">
+                        <img src="hero_vini.jpg" alt="Vinícius Moraes, nutricionista sorrindo de forma acolhedora" class="hero-img">
+                        <div class="image-badge">
+                            <i class="fas fa-play"></i>
+                            <span>Assista minha história</span>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Quem é Vinícius Moraes</h2>
+                <p class="section-subtitle">Conheça a jornada de quem transformou sua própria vida e agora ajuda milhares de pessoas</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text" data-aos="fade-right">
+                    <div class="story-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Ex-Atleta</h4>
+                                <p>Vivi o lado pesado das dietas restritivas e extremas</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Descoberta</h4>
+                                <p>Entendi que nutrição boa é a que cabe na vida real</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Missão Atual</h4>
+                                <p>Traduzo a ciência em linguagem simples para você ganhar autonomia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            "Minha missão é traduzir a ciência em linguagem simples, para que qualquer pessoa possa ganhar autonomia e resultado de verdade — sem culpas e sem regras impossíveis."
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="sobre-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="sobre_vini.jpg" alt="Vinícius Moraes em ambiente profissional" class="sobre-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="certification">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>CRN Ativo</span>
+                                </div>
+                                <div class="specialization">
+                                    <i class="fas fa-star"></i>
+                                    <span>Especialista em Emagrecimento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section class="metodologia" id="metodologia">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Minha Metodologia</h2>
+                <p class="section-subtitle">Um sistema comprovado que funciona na vida real</p>
+            </div>
+            <div class="metodologia-grid">
+                <div class="metodologia-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Avaliação Realista</h3>
+                    <p>Analisamos sua rotina, preferências e objetivos sem julgamentos</p>
+                    <div class="card-features">
+                        <span class="feature">Anamnese completa</span>
+                        <span class="feature">Análise de rotina</span>
+                        <span class="feature">Definição de metas</span>
+                    </div>
+                </div>
+                <div class="metodologia-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Plano Personalizado</h3>
+                    <p>Criamos estratégias que se encaixam perfeitamente na sua vida</p>
+                    <div class="card-features">
+                        <span class="feature">Cardápio flexível</span>
+                        <span class="feature">Receitas práticas</span>
+                        <span class="feature">Substituições inteligentes</span>
+                    </div>
+                </div>
+                <div class="metodologia-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Acompanhamento Contínuo</h3>
+                    <p>Suporte constante para manter a motivação e ajustar o plano</p>
+                    <div class="card-features">
+                        <span class="feature">Consultas regulares</span>
+                        <span class="feature">Ajustes no plano</span>
+                        <span class="feature">Suporte emocional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora Section -->
+    <section class="calculadora" id="calculadora">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Calculadora de IMC e Metas</h2>
+                <p class="section-subtitle">Descubra seu IMC atual e defina metas realistas para sua transformação</p>
+            </div>
+            <div class="calculadora-content">
+                <div class="calculadora-form" data-aos="fade-right">
+                    <div class="form-card">
+                        <h3>Calcule seu IMC</h3>
+                        <form id="imcForm">
+                            <div class="form-group">
+                                <label for="altura">Altura (cm)</label>
+                                <input type="number" id="altura" placeholder="Ex: 170" min="100" max="250">
+                            </div>
+                            <div class="form-group">
+                                <label for="peso">Peso (kg)</label>
+                                <input type="number" id="peso" placeholder="Ex: 70" min="30" max="300">
+                            </div>
+                            <div class="form-group">
+                                <label for="idade">Idade</label>
+                                <input type="number" id="idade" placeholder="Ex: 30" min="15" max="100">
+                            </div>
+                            <div class="form-group">
+                                <label for="atividade">Nível de Atividade</label>
+                                <select id="atividade">
+                                    <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+                                    <option value="1.375">Levemente ativo (exercício leve 1-3 dias/semana)</option>
+                                    <option value="1.55">Moderadamente ativo (exercício moderado 3-5 dias/semana)</option>
+                                    <option value="1.725">Muito ativo (exercício intenso 6-7 dias/semana)</option>
+                                    <option value="1.9">Extremamente ativo (exercício muito intenso, trabalho físico)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-calculator"></i>
+                                Calcular IMC e Metas
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="calculadora-result" data-aos="fade-left">
+                    <div class="result-card" id="resultCard" style="display: none;">
+                        <div class="result-header">
+                            <h3>Seus Resultados</h3>
+                        </div>
+                        <div class="result-content">
+                            <div class="imc-result">
+                                <div class="imc-value" id="imcValue">0</div>
+                                <div class="imc-label">IMC</div>
+                                <div class="imc-category" id="imcCategory">-</div>
+                            </div>
+                            <div class="goals">
+                                <div class="goal-item">
+                                    <i class="fas fa-bullseye"></i>
+                                    <div class="goal-content">
+                                        <h4>Meta de Peso</h4>
+                                        <p id="pesoIdeal">- kg</p>
+                                    </div>
+                                </div>
+                                <div class="goal-item">
+                                    <i class="fas fa-fire"></i>
+                                    <div class="goal-content">
+                                        <h4>Calorias Diárias</h4>
+                                        <p id="caloriasDiarias">- kcal</p>
+                                    </div>
+                                </div>
+                                <div class="goal-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div class="goal-content">
+                                        <h4>Tempo Estimado</h4>
+                                        <p id="tempoEstimado">- meses</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-actions">
+                                <a href="#consulta" class="btn btn-primary">Agendar Consulta</a>
+                                <a href="#ebook" class="btn btn-secondary">Baixar E-book</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformações Section -->
+    <section class="transformacoes" id="transformacoes">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Transformações Reais</h2>
+                <p class="section-subtitle">Histórias de pessoas que mudaram suas vidas com minha metodologia</p>
+            </div>
+            <div class="transformacoes-grid">
+                <div class="transformacao-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="transformacao1.jpg" alt="Antes e depois - Maria Silva" class="transformacao-img">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h4>Maria Silva</h4>
+                                <p>Perdeu 15kg em 6 meses</p>
+                                <div class="result-stats">
+                                    <span class="stat">-15kg</span>
+                                    <span class="stat">6 meses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="transformacao-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="transformacao2.jpg" alt="Antes e depois - João Santos" class="transformacao-img">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h4>João Santos</h4>
+                                <p>Perdeu 22kg em 8 meses</p>
+                                <div class="result-stats">
+                                    <span class="stat">-22kg</span>
+                                    <span class="stat">8 meses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="transformacao-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="transformacao3.jpg" alt="Antes e depois - Ana Costa" class="transformacao-img">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h4>Ana Costa</h4>
+                                <p>Perdeu 18kg em 7 meses</p>
+                                <div class="result-stats">
+                                    <span class="stat">-18kg</span>
+                                    <span class="stat">7 meses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre emagrecimento saudável</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Quanto tempo leva para ver resultados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Os primeiros resultados visíveis geralmente aparecem em 2-4 semanas, mas isso varia de pessoa para pessoa. O importante é focar na consistência e nas mudanças de hábitos, não apenas no peso na balança.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Preciso cortar todos os carboidratos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! Carboidratos são importantes para o funcionamento do corpo. O segredo está em escolher os carboidratos certos e na quantidade adequada para seus objetivos.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>Posso comer doces durante o processo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! A chave é o equilíbrio. Você pode incluir doces de forma estratégica e em quantidades controladas, sem comprometer seus resultados.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Como manter a motivação?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Definir metas realistas, celebrar pequenas vitórias e ter um plano flexível são fundamentais. Além disso, o acompanhamento profissional ajuda muito a manter o foco.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Bot Section -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+            <span>Dúvidas?</span>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="chat-info">
+                    <h4>Vinícius Moraes</h4>
+                    <span>Nutricionista</span>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Olá! Sou o Vinícius. Como posso te ajudar com suas dúvidas sobre nutrição?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Digite sua pergunta...">
+                <button id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="cta-background">
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Pronto para transformar sua vida?</h2>
+                <p>Comece hoje mesmo com uma consulta gratuita e descubra como é possível emagrecer de forma saudável e sustentável.</p>
+                <div class="cta-buttons">
+                    <a href="#consulta" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Consulta Gratuita
+                    </a>
+                    <a href="#calculadora" class="btn btn-secondary">
+                        <i class="fas fa-calculator"></i>
+                        Calcular IMC
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Vinícius Moraes</h3>
+                            <p>Emagrecimento Saudável</p>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Nutrição sem complicação, para pessoas reais.</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="nav-group">
+                        <h4>Navegação</h4>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#metodologia">Metodologia</a>
+                        <a href="#calculadora">Calculadora</a>
+                        <a href="#transformacoes">Transformações</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                    <div class="nav-group">
+                        <h4>Recursos</h4>
+                        <a href="#ebook">E-book Gratuito</a>
+                        <a href="#consulta">Consulta Gratuita</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+                    <div class="nav-group">
+                        <h4>Legal</h4>
+                        <a href="#privacidade">Política de Privacidade</a>
+                        <a href="#termos">Termos de Uso</a>
+                    </div>
+                </nav>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>Este site oferece conteúdo educativo e não substitui acompanhamento médico individualizado.</p>
+                <p>&copy; 2024 Vinícius Moraes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script-d.js"></script>
+</body>
+</html>

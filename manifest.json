@@ -1,0 +1,42 @@
+{
+  "name": "Vinícius Moraes | Emagrecimento Saudável",
+  "short_name": "Vinícius Moraes",
+  "description": "Nutricionista que traduz nutrição em linguagem simples. E-book gratuito, consultas e programas em grupo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F1EB",
+  "theme_color": "#6BAA75",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "education"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
