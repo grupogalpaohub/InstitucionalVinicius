@@ -564,11 +564,11 @@ document.addEventListener('DOMContentLoaded', function() {
             let url = '#';
             
             if (platform.includes('instagram')) {
-                url = 'https://instagram.com/viniciusmoraes';
+                url = 'https://www.instagram.com/nutri.vinimoraes/';
             } else if (platform.includes('youtube')) {
                 url = 'https://youtube.com/viniciusmoraes';
             } else if (platform.includes('whatsapp')) {
-                url = 'https://wa.me/5511999999999';
+                url = 'https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0';
             }
             
             // Simular abertura de link

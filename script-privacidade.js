@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             switch (platform) {
                 case 'whatsapp':
-                    shareUrl = `https://wa.me/?text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
+                    shareUrl = `https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0&text=${encodeURIComponent(currentTitle + ' - ' + currentUrl)}`;
                     break;
                 case 'twitter':
                     shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(currentTitle)}&url=${encodeURIComponent(currentUrl)}`;
