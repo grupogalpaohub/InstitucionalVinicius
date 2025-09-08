@@ -13,12 +13,6 @@
     --cinza-grafite: #3A3A3A;
     --amarelo-suave: #F2C94C;
     
-    /* Cores adicionais para versão D */
-    --verde-claro: #8BC34A;
-    --azul-claro: #2196F3;
-    --roxo-claro: #9C27B0;
-    --laranja-claro: #FF9800;
-    
     /* Tipografia */
     --font-titulo: 'Poppins', sans-serif;
     --font-subtitulo: 'Nunito', sans-serif;
@@ -26,19 +20,7 @@
     
     /* Espaçamentos */
     --container-padding: 2rem;
-    --section-padding: 6rem 0;
-    
-    /* Sombras */
-    --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
-    --shadow-heavy: 0 15px 50px rgba(0, 0, 0, 0.15);
-    --shadow-3d: 0 20px 60px rgba(0, 0, 0, 0.2);
-    
-    /* Transições */
-    --transition-fast: 0.3s ease;
-    --transition-medium: 0.5s ease;
-    --transition-slow: 0.8s ease;
-    --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --section-padding: 4rem 0;
 }
 
 body {

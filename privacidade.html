@@ -25,19 +25,34 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <div class="logo-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
                 <div class="logo-text">
-                    <h3>Vinícius Moraes</h3>
-                    <span>Emagrecimento Saudável</span>
+                    <a href="index.html">
+                        <h3>Vinícius Moraes</h3>
+                        <span>Emagrecimento Saudável</span>
+                    </a>
                 </div>
             </div>
-            <div class="nav-menu">
-                <a href="/index-d.html" class="nav-link">Voltar ao Site</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#produtos" class="nav-link">Produtos</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-cta">
+                <a href="contato.html#consulta" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt"></i>
+                    Consulta Gratuita
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
