@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         loadingScreen.classList.add('hidden');
         document.body.style.overflow = 'auto';
-    }, 3000);
+    }, 1500);
 });
 
 // Inicializar AOS

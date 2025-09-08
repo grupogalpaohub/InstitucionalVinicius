@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     const loadingScreen = document.getElementById('loadingScreen');
     setTimeout(() => {
         loadingScreen.classList.add('hidden');
-    }, 2000);
+    }, 1000);
 });
 
 // Header scroll effect
