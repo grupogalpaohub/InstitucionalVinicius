@@ -1007,7 +1007,7 @@ p {
 
 .carousel-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
     gap: 2rem;
     width: max-content;
 }
