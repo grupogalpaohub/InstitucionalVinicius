@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Carrossel - 4 Imagens</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 2px solid #ccc; }
+        .carousel-test { 
+            width: 100%; 
+            height: 400px; 
+            overflow: hidden; 
+            border: 2px solid #000; 
+            position: relative;
+            margin: 20px 0;
+        }
+        .carousel-track-test {
+            display: flex;
+            animation: scroll-test 20s linear infinite;
+            gap: 2rem;
+            width: max-content;
+        }
+        .carousel-item-test {
+            flex-shrink: 0;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .carousel-item-test img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .status { margin: 10px 0; font-weight: bold; }
+        .success { color: green; }
+        .error { color: red; }
+        .info { color: blue; }
+        
+        @keyframes scroll-test {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .carousel-test:hover .carousel-track-test {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎠 Teste Carrossel com 4 Imagens</h1>
+    
+    <div class="test-section">
+        <h3>Teste 1: Carrossel Simulado</h3>
+        <p>Testando o carrossel com 4 imagens (socproof1, socproof2, socproof3, Antesxdepois):</p>
+        <div class="carousel-test">
+            <div class="carousel-track-test">
+                <div class="carousel-item-test">
+                    <img src="socproof1.jpg" alt="Transformação 1" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof1';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="socproof2.jpg" alt="Transformação 2" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof2';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="socproof3.jpg" alt="Transformação 3" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof3';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="Antesxdepois.jpg" alt="Antes e Depois" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='AntesxDepois';">
+                </div>
+                <!-- Duplicar para loop infinito -->
+                <div class="carousel-item-test">
+                    <img src="socproof1.jpg" alt="Transformação 1" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof1';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="socproof2.jpg" alt="Transformação 2" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof2';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="socproof3.jpg" alt="Transformação 3" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='SocProof3';">
+                </div>
+                <div class="carousel-item-test">
+                    <img src="Antesxdepois.jpg" alt="Antes e Depois" onerror="this.style.background='linear-gradient(135deg, #6BAA75, #264E36)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='AntesxDepois';">
+                </div>
+            </div>
+        </div>
+        <div id="carousel-status" class="status info">🎠 Carrossel com 4 imagens funcionando! Passe o mouse para pausar.</div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Teste 2: Verificação de Imagens</h3>
+        <div id="image-status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Teste 3: Contagem de Elementos</h3>
+        <div id="count-status"></div>
+    </div>
+
+    <script>
+        function checkImages() {
+            const images = ['socproof1.jpg', 'socproof2.jpg', 'socproof3.jpg', 'Antesxdepois.jpg'];
+            const statusDiv = document.getElementById('image-status');
+            let loaded = 0;
+            let total = images.length;
+            
+            images.forEach((src, index) => {
+                const img = new Image();
+                img.onload = function() {
+                    loaded++;
+                    statusDiv.innerHTML += `✅ ${src} - Carregada<br>`;
+                    if (loaded === total) {
+                        statusDiv.innerHTML += `<br><strong class="success">✅ Todas as ${total} imagens carregaram com sucesso!</strong>`;
+                    }
+                };
+                img.onerror = function() {
+                    statusDiv.innerHTML += `❌ ${src} - Erro ao carregar<br>`;
+                };
+                img.src = src;
+            });
+        }
+        
+        function countElements() {
+            const track = document.querySelector('.carousel-track-test');
+            const items = track.querySelectorAll('.carousel-item-test');
+            const countDiv = document.getElementById('count-status');
+            
+            countDiv.innerHTML = `
+                <strong>Elementos no carrossel:</strong><br>
+                📊 Total de itens: ${items.length}<br>
+                🎯 Imagens originais: 4<br>
+                🔄 Duplicatas: ${items.length - 4}<br>
+                ✅ Status: ${items.length === 8 ? 'Correto (4 + 4 duplicatas)' : 'Incorreto'}
+            `;
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            checkImages();
+            countElements();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Vinícius Moraes | Emagrecimento Saudável</title>
+    <meta name="description" content="Entre em contato com Vinícius Moraes, nutricionista especialista em emagrecimento saudável. Agende sua consulta gratuita e transforme sua relação com a comida.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contato | Vinícius Moraes | Emagrecimento Saudável">
+    <meta property="og:description" content="Entre em contato com Vinícius Moraes, nutricionista especialista em emagrecimento saudável. Agende sua consulta gratuita e transforme sua relação com a comida.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://institucionalvinicius.pages.dev/contato">
+    <meta property="og:image" content="https://institucionalvinicius.pages.dev/og_vinicius.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Nunito:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Header e Footer Objects -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Vamos conversar sobre sua alimentação?</h1>
+                    <p class="hero-subtitle">
+                        Preencha o formulário abaixo e eu entrarei em contato para agendarmos 
+                        uma conversa sobre seus objetivos nutricionais.
+                    </p>
+                    <div class="hero-highlight">
+                        <i class="fas fa-gift"></i>
+                        <span>Consulta inicial gratuita</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="consulta" class="contact-section">
+            <div class="container">
+                <!-- Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Agende sua Consulta Gratuita</h2>
+                        <p>Preencha os dados abaixo e eu entrarei em contato em até 24h</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome" class="form-label">
+                                <i class="fas fa-user"></i>
+                                Nome Completo *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                class="form-input" 
+                                placeholder="Seu nome completo"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp" class="form-label">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp *
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="whatsapp" 
+                                name="whatsapp" 
+                                class="form-input" 
+                                placeholder="(21) 99999-9999"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i>
+                                E-mail *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="seu@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="meta" class="form-label">
+                                <i class="fas fa-target"></i>
+                                Qual é sua meta principal? *
+                            </label>
+                            <select id="meta" name="meta" class="form-select" required>
+                                <option value="">Selecione sua meta</option>
+                                <option value="nutricao-saudaveis">Nutrição para pessoas saudáveis</option>
+                                <option value="nutricao-sedentarios">Nutrição para Sedentários</option>
+                                <option value="nutricao-diabeticos">Nutrição para Diabéticos</option>
+                                <option value="nutricao-atletas">Nutrição para Atletas</option>
+                                <option value="nutricao-esteticos">Nutrição para fins estéticos</option>
+                                <option value="nutricao-familia">Nutrição para a Família</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="texto" class="form-label">
+                                <i class="fas fa-comment"></i>
+                                Conte-me sobre você *
+                            </label>
+                            <textarea 
+                                id="texto" 
+                                name="texto" 
+                                class="form-textarea" 
+                                placeholder="Fale sobre seus hábitos alimentares, dificuldades, objetivos e qualquer informação que considere relevante..."
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termos" name="termos" required>
+                                <span class="checkmark"></span>
+                                Li e aceito os <a href="termos-de-uso.html" target="_blank">Termos de Uso</a> e 
+                                <a href="politica-privacidade.html" target="_blank">Política de Privacidade</a> *
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                            <button type="button" onclick="resetForm()" class="btn btn-secondary">
+                                <i class="fas fa-undo"></i>
+                                Limpar Formulário
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info - Movido para baixo -->
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p><a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" rel="noopener">+55 24 99939-8229</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>contato@viniciusmoraes.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Localização</strong>
+                                <p>Rio de Janeiro, RJ</p>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Me siga nas redes sociais</h4>
+                            <div class="social-links-inline">
+                                <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://youtube.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://www.facebook.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="text-center">Dúvidas Frequentes</h2>
+                <p class="text-center mb-4">
+                    Dúvidas comuns sobre consultas e atendimento
+                </p>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como funciona a consulta inicial gratuita?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A consulta inicial gratuita é uma conversa de 30 minutos onde conheço seus objetivos, hábitos alimentares e dificuldades. É uma oportunidade para você me conhecer e decidir se quer continuar o acompanhamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quanto tempo dura o acompanhamento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O acompanhamento varia de acordo com seus objetivos. Ofereço programas de 90 dias que são ideais para criar mudanças duradouras e sustentáveis nos seus hábitos alimentares.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Você atende online ou presencial?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Atendo exclusivamente online, o que permite maior flexibilidade de horários e comodidade para você. As consultas são realizadas por videochamada com qualidade profissional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Preciso de exames para começar?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Não é obrigatório, mas se você tiver exames recentes (últimos 6 meses), eles podem ser úteis para um acompanhamento mais personalizado. Vamos conversar sobre isso na consulta inicial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script>
+        // Aplicar header e footer
+        document.addEventListener('DOMContentLoaded', function() {
+            Header.insertInto('header-container');
+            Footer.insertInto('footer-container');
+            Header.setActiveLink('contato.html');
+        });
+
+        // Formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simular envio (aqui você integraria com seu backend)
+            console.log('Dados do formulário:', data);
+            
+            // Mostrar mensagem de sucesso
+            alert('Mensagem enviada com sucesso! Entrarei em contato em até 24h.');
+            
+            // Resetar formulário
+            this.reset();
+        });
+
+        // Resetar formulário
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                // Fechar outros itens abertos
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle item atual
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
