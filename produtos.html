@@ -3,474 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Vinícius Moraes | Emagrecimento Saudável</title>
+    <title>Produtos | Vinícius Moraes | Emagrecimento Saudável</title>
     <meta name="description" content="Conheça os programas de nutrição do Vinícius Moraes. Sessão de Clareza Alimentar, Jornadas Estratégica e Premium. Nutrição sem terrorismo.">
+    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Produtos | Vinícius Moraes | Emagrecimento Saudável">
+    <meta property="og:description" content="Conheça os programas de nutrição do Vinícius Moraes. Sessão de Clareza Alimentar, Jornadas Estratégica e Premium. Nutrição sem terrorismo.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://institucionalvinicius.pages.dev/produtos">
-    <meta property="og:title" content="Produtos - Vinícius Moraes | Emagrecimento Saudável">
-    <meta property="og:description" content="Conheça os programas de nutrição do Vinícius Moraes. Sessão de Clareza Alimentar, Jornadas Estratégica e Premium. Nutrição sem terrorismo.">
-    <meta property="og:image" content="og_vinicius.jpg">
-
+    <meta property="og:image" content="https://institucionalvinicius.pages.dev/og_vinicius.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Nunito:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Library for animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="styles-produtos.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Header e Footer Objects -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <i class="fas fa-leaf"></i>
-            </div>
-            <div class="loading-text">Carregando produtos...</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="logo-text">
-                    <a href="index.html">
-                        <h3>Vinícius Moraes</h3>
-                        <span>Emagrecimento Saudável</span>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="produtos.html" class="nav-link active">Produtos</a>
-                <a href="contato.html" class="nav-link">Contato</a>
-            </div>
-            <div class="nav-cta">
-                <a href="contato.html#consulta" class="btn btn-primary">
-                    <i class="fas fa-calendar-alt"></i>
-                    Consulta Gratuita
-                </a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </header>
+    <!-- Header Container -->
+    <div id="header-container"></div>
 
     <!-- Main Content -->
     <main class="main">
         <!-- Hero Section -->
-        <section class="hero" id="inicio">
-            <div class="hero-background">
-                <div class="hero-particles" id="particles"></div>
-                <div class="hero-gradient"></div>
-            </div>
+        <section class="hero">
             <div class="container">
-                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="title-highlight">Nutrição sem terrorismo:</span>
-                            <br>escolha o caminho que faz sentido para você.
-                        </h1>
-                        <p class="hero-subtitle">
-                            Com clareza, acolhimento e ciência acessível, cada programa foi criado para transformar sua rotina alimentar — sem dietas malucas.
-                        </p>
-                        <div class="hero-ctas">
-                            <a href="#sessao-clareza" class="btn btn-primary">
-                                <i class="fas fa-lightbulb"></i>
-                                Sessão de Clareza Alimentar
-                            </a>
-                            <a href="#jornada-estrategica" class="btn btn-secondary">
-                                <i class="fas fa-route"></i>
-                                Jornada Estratégica: 90 Dias
-                            </a>
-                            <a href="#jornada-premium" class="btn btn-accent">
-                                <i class="fas fa-crown"></i>
-                                Jornada Premium: 90 Dias
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="image-container">
-                            <img src="hero_vini.jpg" alt="Vinícius Moraes sorrindo em ambiente acolhedor" class="hero-img">
-                            <div class="image-overlay">
-                                <div class="floating-card">
-                                    <i class="fas fa-heart"></i>
-                                    <span>Nutrição sem complicação</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão de Clareza Alimentar -->
-        <section class="product-section" id="sessao-clareza">
-            <div class="container">
-                <div class="product-card" data-aos="fade-up" data-aos-duration="800">
-                    <div class="product-badge">
-                        <i class="fas fa-star"></i>
-                        <span>Primeiro Passo</span>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-header">
-                            <h2 class="product-title">Sessão de Clareza Alimentar</h2>
-                            <div class="product-price">
-                                <span class="price-currency">R$</span>
-                                <span class="price-value">200</span>
-                            </div>
-                        </div>
-                        <div class="product-description">
-                            <p>Uma única consulta online (50 minutos) para quem precisa de clareza imediata.
-                            Aqui vamos entender sua rotina, identificar os principais pontos de ajuste e traçar recomendações práticas que você pode aplicar já no dia seguinte.</p>
-                        </div>
-                        <div class="product-details">
-                            <div class="detail-section">
-                                <h3>Ideal para:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Quem busca um direcionamento rápido</li>
-                                    <li><i class="fas fa-check"></i> Quem nunca fez acompanhamento e quer começar com um primeiro passo</li>
-                                    <li><i class="fas fa-check"></i> Quem precisa de ajustes pontuais, sem compromisso de longo prazo</li>
-                                </ul>
-                            </div>
-                            <div class="detail-section">
-                                <h3>Inclui:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 1 consulta de 50 min online</li>
-                                    <li><i class="fas fa-check"></i> Recomendações práticas adaptadas à sua rotina</li>
-                                    <li><i class="fas fa-check"></i> Documento resumo com os principais ajustes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-cta">
-                            <a href="contato.html" class="btn btn-primary btn-large">
-                                <i class="fas fa-calendar-check"></i>
-                                Quero minha Sessão de Clareza
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Jornada Estratégica -->
-        <section class="product-section" id="jornada-estrategica">
-            <div class="container">
-                <div class="product-card" data-aos="fade-up" data-aos-duration="800">
-                    <div class="product-badge popular">
-                        <i class="fas fa-fire"></i>
-                        <span>Mais Popular</span>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-header">
-                            <h2 class="product-title">Jornada Estratégica: 90 Dias</h2>
-                            <div class="product-price">
-                                <span class="price-currency">R$</span>
-                                <span class="price-value">497</span>
-                            </div>
-                        </div>
-                        <div class="product-description">
-                            <p>Um acompanhamento de 3 meses para construir sua rotina alimentar com clareza e consistência.
-                            Você terá consultas mensais e contato direto pelo WhatsApp para dúvidas e ajustes, sem terrorismo e sem complicação.</p>
-                        </div>
-                        <div class="product-details">
-                            <div class="detail-section">
-                                <h3>Ideal para:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Quem busca emagrecimento sustentável</li>
-                                    <li><i class="fas fa-check"></i> Quem quer aprender a organizar refeições sem sofrimento</li>
-                                    <li><i class="fas fa-check"></i> Quem precisa de acompanhamento, mas prefere um modelo enxuto</li>
-                                </ul>
-                            </div>
-                            <div class="detail-section">
-                                <h3>Inclui:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 3 consultas individuais de 50 min (1 por mês)</li>
-                                    <li><i class="fas fa-check"></i> Acesso direto ao Vinícius pelo WhatsApp para dúvidas rápidas</li>
-                                    <li><i class="fas fa-check"></i> Checklists e materiais de apoio</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-cta">
-                            <a href="contato.html" class="btn btn-secondary btn-large">
-                                <i class="fas fa-rocket"></i>
-                                Quero iniciar minha Jornada Estratégica
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Jornada Premium -->
-        <section class="product-section" id="jornada-premium">
-            <div class="container">
-                <div class="product-card" data-aos="fade-up" data-aos-duration="800">
-                    <div class="product-badge premium">
-                        <i class="fas fa-crown"></i>
-                        <span>Acompanhamento Completo</span>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-header">
-                            <h2 class="product-title">Jornada Premium: 90 Dias</h2>
-                            <div class="product-price">
-                                <span class="price-currency">R$</span>
-                                <span class="price-value">697</span>
-                            </div>
-                        </div>
-                        <div class="product-description">
-                            <p>O acompanhamento mais completo: além das consultas mensais, você terá retornos quinzenais para garantir ajustes constantes e acesso à Comunidade Saúde Primeiro — um espaço exclusivo de suporte e motivação coletiva.</p>
-                        </div>
-                        <div class="product-details">
-                            <div class="detail-section">
-                                <h3>Ideal para:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Quem deseja resultados mais rápidos</li>
-                                    <li><i class="fas fa-check"></i> Quem precisa de acompanhamento próximo e motivação contínua</li>
-                                    <li><i class="fas fa-check"></i> Quem quer estar em comunidade, trocando experiências e conquistas</li>
-                                </ul>
-                            </div>
-                            <div class="detail-section">
-                                <h3>Inclui:</h3>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 3 consultas de 50 min</li>
-                                    <li><i class="fas fa-check"></i> 3 retornos de 30 min (quinzenais)</li>
-                                    <li><i class="fas fa-check"></i> Acesso à Comunidade Saúde Primeiro (grupo exclusivo)</li>
-                                    <li><i class="fas fa-check"></i> Materiais de apoio e guias práticos</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-cta">
-                            <a href="contato.html" class="btn btn-accent btn-large">
-                                <i class="fas fa-gem"></i>
-                                Quero entrar na Jornada Premium
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Tabela Comparativa -->
-        <section class="comparison-section">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section-title">Compare os Programas</h2>
-                    <p class="section-subtitle">Escolha o programa que melhor se adapta ao seu momento e objetivos</p>
-                </div>
-                <div class="comparison-table-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="comparison-table">
-                        <div class="table-header">
-                            <div class="table-cell header-cell">Benefícios / Produtos</div>
-                            <div class="table-cell product-cell">
-                                <div class="product-name">Sessão de Clareza Alimentar</div>
-                                <div class="product-badge-small">Primeiro Passo</div>
-                            </div>
-                            <div class="table-cell product-cell popular">
-                                <div class="product-name">Jornada Estratégica: 90 Dias</div>
-                                <div class="product-badge-small popular">Mais Popular</div>
-                            </div>
-                            <div class="table-cell product-cell premium">
-                                <div class="product-name">Jornada Premium: 90 Dias</div>
-                                <div class="product-badge-small premium">Acompanhamento Completo</div>
-                            </div>
-                        </div>
-                        <div class="table-body">
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Objetivo</div>
-                                <div class="table-cell">Clareza rápida e ajustes pontuais</div>
-                                <div class="table-cell">Construir rotina alimentar em 3 meses</div>
-                                <div class="table-cell">Transformação completa com suporte próximo + comunidade</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Consultas</div>
-                                <div class="table-cell">1 consulta de 50 min</div>
-                                <div class="table-cell">3 consultas de 50 min (1/mês)</div>
-                                <div class="table-cell">3 consultas de 50 min + 3 retornos de 30 min</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Suporte WhatsApp</div>
-                                <div class="table-cell">Não incluso</div>
-                                <div class="table-cell">Incluso (dúvidas rápidas)</div>
-                                <div class="table-cell">Incluso (dúvidas rápidas + suporte contínuo)</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Comunidade</div>
-                                <div class="table-cell">Não incluso</div>
-                                <div class="table-cell">Não incluso</div>
-                                <div class="table-cell">Incluso</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Materiais de apoio</div>
-                                <div class="table-cell">Resumo pós-consulta</div>
-                                <div class="table-cell">Checklists e guias práticos</div>
-                                <div class="table-cell">Checklists e materiais exclusivos</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Encontros em Grupo</div>
-                                <div class="table-cell">Não</div>
-                                <div class="table-cell">Não</div>
-                                <div class="table-cell">Não</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Gamificação</div>
-                                <div class="table-cell">Não</div>
-                                <div class="table-cell">Não</div>
-                                <div class="table-cell">Não</div>
-                            </div>
-                            <div class="table-row">
-                                <div class="table-cell feature-cell">Relatório Final</div>
-                                <div class="table-cell">Não</div>
-                                <div class="table-cell">Sim</div>
-                                <div class="table-cell">Sim</div>
-                            </div>
-                            <div class="table-row price-row">
-                                <div class="table-cell feature-cell">Investimento</div>
-                                <div class="table-cell price-cell">R$ 200</div>
-                                <div class="table-cell price-cell">R$ 497</div>
-                                <div class="table-cell price-cell">R$ 697</div>
-                            </div>
-                            <div class="table-row cta-row">
-                                <div class="table-cell feature-cell">CTA</div>
-                                <div class="table-cell cta-cell">
-                                    <a href="contato.html" class="btn btn-primary btn-small">Agendar minha Sessão</a>
-                                </div>
-                                <div class="table-cell cta-cell">
-                                    <a href="contato.html" class="btn btn-secondary btn-small">Começar minha Jornada</a>
-                                </div>
-                                <div class="table-cell cta-cell">
-                                    <a href="contato.html" class="btn btn-accent btn-small">Entrar na Jornada Premium</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Final -->
-        <section class="final-cta">
-            <div class="container">
-                <div class="cta-content" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="cta-title">
-                        <span class="cta-emoji">👉</span>
-                        Qual caminho faz sentido para você agora?
-                    </h2>
-                    <p class="cta-text">
-                        <span class="cta-emoji">👉</span>
-                        Não existe fórmula única. Cada programa foi pensado para que você tenha clareza, liberdade e resultado — sem terrorismo alimentar.
+                <div class="hero-content">
+                    <h1>Nossos Produtos</h1>
+                    <p class="hero-subtitle">
+                        Escolha o programa que melhor se adequa ao seu momento e objetivos. 
+                        Todos os produtos são baseados em nutrição sem terrorismo.
                     </p>
-                    <div class="cta-buttons">
-                        <a href="#sessao-clareza" class="btn btn-primary">
-                            <i class="fas fa-lightbulb"></i>
-                            Sessão de Clareza Alimentar
-                        </a>
-                        <a href="#jornada-estrategica" class="btn btn-secondary">
-                            <i class="fas fa-route"></i>
-                            Jornada Estratégica: 90 Dias
-                        </a>
-                        <a href="#jornada-premium" class="btn btn-accent">
-                            <i class="fas fa-crown"></i>
-                            Jornada Premium: 90 Dias
-                        </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="container">
+                <!-- Sessão de Clareza Alimentar -->
+                <div class="product-card" id="sessao-clareza">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <div class="product-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h2>Sessão de Clareza Alimentar</h2>
+                            <p class="product-description">
+                                Uma conversa de 60 minutos para entender seus hábitos atuais, 
+                                identificar padrões alimentares e traçar um plano inicial personalizado.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> Análise completa dos hábitos atuais</li>
+                                <li><i class="fas fa-check"></i> Identificação de padrões alimentares</li>
+                                <li><i class="fas fa-check"></i> Plano inicial personalizado</li>
+                                <li><i class="fas fa-check"></i> Orientações práticas para começar</li>
+                            </ul>
+                            <div class="product-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-value">197</span>
+                            </div>
+                            <a href="contato.html#consulta" class="btn btn-primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                Agendar Sessão
+                            </a>
+                        </div>
+                        <div class="product-image">
+                            <div class="product-placeholder">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Sessão de Clareza</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Jornada Estratégica -->
+                <div class="product-card" id="jornada-estrategica">
+                    <div class="product-content">
+                        <div class="product-image">
+                            <div class="product-placeholder">
+                                <i class="fas fa-route"></i>
+                                <p>Jornada Estratégica</p>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-icon">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <h2>Jornada Estratégica: 90 Dias</h2>
+                            <p class="product-description">
+                                Acompanhamento completo de 90 dias com consultas semanais, 
+                                suporte contínuo e ferramentas para mudanças duradouras.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 12 consultas individuais (1x por semana)</li>
+                                <li><i class="fas fa-check"></i> Plano alimentar personalizado</li>
+                                <li><i class="fas fa-check"></i> Suporte via WhatsApp</li>
+                                <li><i class="fas fa-check"></i> Ajustes semanais do plano</li>
+                                <li><i class="fas fa-check"></i> Material educativo exclusivo</li>
+                            </ul>
+                            <div class="product-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-value">597</span>
+                            </div>
+                            <a href="contato.html#consulta" class="btn btn-primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                Começar Jornada
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jornada Premium -->
+                <div class="product-card" id="jornada-premium">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <div class="product-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h2>Jornada Premium: 90 Dias</h2>
+                            <p class="product-description">
+                                Acompanhamento VIP de 90 dias com consultas, plano alimentar 
+                                personalizado, suporte prioritário e recursos exclusivos.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fas fa-check"></i> 12 consultas individuais (1x por semana)</li>
+                                <li><i class="fas fa-check"></i> Plano alimentar ultra-personalizado</li>
+                                <li><i class="fas fa-check"></i> Suporte prioritário 24/7</li>
+                                <li><i class="fas fa-check"></i> Ajustes diários do plano</li>
+                                <li><i class="fas fa-check"></i> Acesso a grupo VIP exclusivo</li>
+                                <li><i class="fas fa-check"></i> Material educativo premium</li>
+                                <li><i class="fas fa-check"></i> Sessão de coaching adicional</li>
+                            </ul>
+                            <div class="product-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-value">897</span>
+                            </div>
+                            <a href="contato.html#consulta" class="btn btn-primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                Começar Jornada Premium
+                            </a>
+                        </div>
+                        <div class="product-image">
+                            <div class="product-placeholder">
+                                <i class="fas fa-crown"></i>
+                                <p>Jornada Premium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison">
+            <div class="container">
+                <h2 class="text-center">Compare os Produtos</h2>
+                <p class="text-center mb-4">
+                    Escolha o programa que melhor se adequa ao seu momento e necessidades
+                </p>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Recursos</th>
+                                <th>Sessão de Clareza</th>
+                                <th>Jornada Estratégica</th>
+                                <th>Jornada Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Duração</td>
+                                <td>1 sessão (60 min)</td>
+                                <td>90 dias</td>
+                                <td>90 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Consultas individuais</td>
+                                <td>1</td>
+                                <td>12 (1x por semana)</td>
+                                <td>12 (1x por semana)</td>
+                            </tr>
+                            <tr>
+                                <td>Plano alimentar personalizado</td>
+                                <td>Básico</td>
+                                <td>Completo</td>
+                                <td>Ultra-personalizado</td>
+                            </tr>
+                            <tr>
+                                <td>Suporte via WhatsApp</td>
+                                <td>Não</td>
+                                <td>Sim</td>
+                                <td>Sim (prioritário)</td>
+                            </tr>
+                            <tr>
+                                <td>Ajustes do plano</td>
+                                <td>Não</td>
+                                <td>Semanal</td>
+                                <td>Diário</td>
+                            </tr>
+                            <tr>
+                                <td>Material educativo</td>
+                                <td>Básico</td>
+                                <td>Completo</td>
+                                <td>Premium</td>
+                            </tr>
+                            <tr>
+                                <td>Grupo exclusivo</td>
+                                <td>Não</td>
+                                <td>Não</td>
+                                <td>Sim</td>
+                            </tr>
+                            <tr>
+                                <td>Preço</td>
+                                <td>R$ 197</td>
+                                <td>R$ 597</td>
+                                <td>R$ 897</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto para começar sua transformação?</h2>
+                    <p>
+                        Agende sua consulta gratuita e descubra qual produto é ideal para você.
+                    </p>
+                    <a href="contato.html#consulta" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Agendar Consulta Gratuita
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <div class="logo-text">
-                            <h3>Vinícius Moraes</h3>
-                            <span>Emagrecimento Saudável</span>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        Nutrição sem complicação, para pessoas reais. Transforme sua relação com a comida de forma sustentável e acolhedora.
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navegação</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="produtos.html">Produtos</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Produtos</h4>
-                        <ul>
-                            <li><a href="produtos.html#sessao-clareza">Sessão de Clareza</a></li>
-                            <li><a href="produtos.html#jornada-estrategica">Jornada Estratégica</a></li>
-                            <li><a href="produtos.html#jornada-premium">Jornada Premium</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="privacidade.html">Política de Privacidade</a></li>
-                            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-social">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://youtube.com/viniciusmoraes" target="_blank" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                        <a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Vinícius Moraes | Emagrecimento Saudável. Todos os direitos reservados.</p>
-                <p class="footer-disclaimer">Este site oferece conteúdo educativo e não substitui acompanhamento médico individualizado.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script-produtos.js"></script>
+    <script>
+        // Aplicar header e footer
+        document.addEventListener('DOMContentLoaded', function() {
+            Header.insertInto('header-container');
+            Footer.insertInto('footer-container');
+            Header.setActiveLink('produtos.html');
+        });
+    </script>
 </body>
 </html>
