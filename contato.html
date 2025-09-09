@@ -401,28 +401,20 @@
     <script>
         // Aguardar o carregamento do DOM
         document.addEventListener('DOMContentLoaded', function() {
-            // Aplicar o header do Index-D
+            // Aplicar o header do Index-D (exatamente como está no index-d.html)
             HeaderIndexD.insertInto('header-container');
             
-            // Atualizar links específicos para a página de contato
-            HeaderIndexD.updateLinks([
-                { href: 'index.html', text: 'Home', icon: 'fas fa-home' },
-                { href: 'produtos.html', text: 'Produtos', icon: 'fas fa-box' },
-                { href: 'contato.html', text: 'Contato', icon: 'fas fa-envelope' }
-            ]);
+            // Apenas atualizar o link Home para apontar para index.html
+            const homeLink = document.querySelector('.nav-link[href="#inicio"]');
+            if (homeLink) {
+                homeLink.href = 'index.html';
+            }
             
-            // Atualizar CTA para apontar para a seção de consulta na página
-            HeaderIndexD.updateCTA({
-                href: '#consulta',
-                text: 'Consulta Gratuita',
-                icon: 'fas fa-calendar-alt'
-            });
-            
-            // Atualizar logo se necessário
-            HeaderIndexD.updateLogo({
-                title: 'Vinícius Moraes',
-                subtitle: 'Emagrecimento Saudável'
-            });
+            // Apenas atualizar o CTA para apontar para a seção de consulta na página
+            const ctaLink = document.querySelector('.nav-cta .btn');
+            if (ctaLink) {
+                ctaLink.href = '#consulta';
+            }
         });
     </script>
 </body>
