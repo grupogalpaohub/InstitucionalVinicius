@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - SocProof1</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-container { margin: 20px 0; border: 2px solid #ccc; padding: 20px; }
+        .test-image { max-width: 200px; height: 200px; border: 2px solid #000; }
+        .status { margin-top: 10px; font-weight: bold; }
+        .success { color: green; }
+        .error { color: red; }
+        .info { color: blue; }
+        .log { background: #f5f5f5; padding: 10px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug - SocProof1.jpg</h1>
+    
+    <div class="test-container">
+        <h3>Teste 1: Carregamento Direto</h3>
+        <img src="socproof1.jpg" alt="Teste SocProof1" class="test-image" 
+             onload="document.getElementById('status1').innerHTML='✅ Carregada com sucesso!'; document.getElementById('status1').className='status success';"
+             onerror="document.getElementById('status1').innerHTML='❌ Erro ao carregar!'; document.getElementById('status1').className='status error';">
+        <div id="status1" class="status">🔄 Carregando...</div>
+    </div>
+    
+    <div class="test-container">
+        <h3>Teste 2: Carregamento com Caminho Relativo</h3>
+        <img src="./socproof1.jpg" alt="Teste SocProof1" class="test-image" 
+             onload="document.getElementById('status2').innerHTML='✅ Carregada com sucesso!'; document.getElementById('status2').className='status success';"
+             onerror="document.getElementById('status2').innerHTML='❌ Erro ao carregar!'; document.getElementById('status2').className='status error';">
+        <div id="status2" class="status">🔄 Carregando...</div>
+    </div>
+    
+    <div class="test-container">
+        <h3>Teste 3: Verificação de Existência</h3>
+        <div id="status3" class="status">🔄 Verificando...</div>
+        <div id="log3" class="log"></div>
+    </div>
+    
+    <div class="test-container">
+        <h3>Teste 4: Comparação com Outras Imagens</h3>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div>
+                <h4>SocProof1</h4>
+                <img src="socproof1.jpg" alt="SocProof1" style="width: 100px; height: 100px; border: 1px solid #ccc;" 
+                     onload="document.getElementById('comp1').innerHTML='✅'; document.getElementById('comp1').style.color='green';"
+                     onerror="document.getElementById('comp1').innerHTML='❌'; document.getElementById('comp1').style.color='red';">
+                <div id="comp1">🔄</div>
+            </div>
+            <div>
+                <h4>SocProof2</h4>
+                <img src="socproof2.jpg" alt="SocProof2" style="width: 100px; height: 100px; border: 1px solid #ccc;" 
+                     onload="document.getElementById('comp2').innerHTML='✅'; document.getElementById('comp2').style.color='green';"
+                     onerror="document.getElementById('comp2').innerHTML='❌'; document.getElementById('comp2').style.color='red';">
+                <div id="comp2">🔄</div>
+            </div>
+            <div>
+                <h4>SocProof3</h4>
+                <img src="socproof3.jpg" alt="SocProof3" style="width: 100px; height: 100px; border: 1px solid #ccc;" 
+                     onload="document.getElementById('comp3').innerHTML='✅'; document.getElementById('comp3').style.color='green';"
+                     onerror="document.getElementById('comp3').innerHTML='❌'; document.getElementById('comp3').style.color='red';">
+                <div id="comp3">🔄</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h3>Informações do Navegador</h3>
+        <div id="browser-info" class="log"></div>
+    </div>
+
+    <script>
+        // Teste de verificação de existência
+        function checkImageExists(src) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => {
+                    document.getElementById('log3').innerHTML += `✅ ${src} - Existe<br>`;
+                    resolve(true);
+                };
+                img.onerror = () => {
+                    document.getElementById('log3').innerHTML += `❌ ${src} - Não encontrada<br>`;
+                    resolve(false);
+                };
+                img.src = src;
+            });
+        }
+
+        // Executar testes
+        async function runTests() {
+            document.getElementById('status3').innerHTML = '🔄 Executando testes...';
+            
+            const images = [
+                'socproof1.jpg',
+                './socproof1.jpg',
+                'socproof2.jpg',
+                'socproof3.jpg',
+                'Antesxdepois.jpg'
+            ];
+
+            for (const src of images) {
+                await checkImageExists(src);
+            }
+            
+            document.getElementById('status3').innerHTML = '✅ Testes concluídos!';
+        }
+
+        // Informações do navegador
+        function showBrowserInfo() {
+            const info = document.getElementById('browser-info');
+            info.innerHTML = `
+                <strong>User Agent:</strong> ${navigator.userAgent}<br>
+                <strong>URL Atual:</strong> ${window.location.href}<br>
+                <strong>Protocolo:</strong> ${window.location.protocol}<br>
+                <strong>Host:</strong> ${window.location.host}<br>
+                <strong>Pathname:</strong> ${window.location.pathname}<br>
+                <strong>Timestamp:</strong> ${new Date().toLocaleString()}
+            `;
+        }
+
+        // Executar quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            runTests();
+            showBrowserInfo();
+        });
+    </script>
+</body>
+</html>

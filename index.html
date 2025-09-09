@@ -239,14 +239,30 @@
 
             // Adicionar indicadores de loading para as imagens
             const images = document.querySelectorAll('.proof-image');
-            images.forEach(img => {
+            images.forEach((img, index) => {
+                // Debug específico para socproof1
+                if (img.src.includes('socproof1.jpg')) {
+                    console.log(`🔍 Debug SocProof1 - Imagem ${index}:`, img.src);
+                }
+                
                 img.addEventListener('load', function() {
                     this.style.opacity = '1';
-                    console.log('Imagem carregada:', this.src);
+                    console.log('✅ Imagem carregada:', this.src);
+                    
+                    // Debug específico para socproof1
+                    if (this.src.includes('socproof1.jpg')) {
+                        console.log('✅ SocProof1 carregada com sucesso!');
+                    }
                 });
                 
                 img.addEventListener('error', function() {
-                    console.log('Erro ao carregar imagem:', this.src);
+                    console.log('❌ Erro ao carregar imagem:', this.src);
+                    
+                    // Debug específico para socproof1
+                    if (this.src.includes('socproof1.jpg')) {
+                        console.log('❌ ERRO: SocProof1 não carregou!');
+                    }
+                    
                     // Se a imagem não carregar, mostrar placeholder
                     this.style.background = 'var(--gradient-primary)';
                     this.style.display = 'flex';
@@ -256,6 +272,16 @@
                     this.style.fontSize = '1.2rem';
                     this.alt = 'Imagem de transformação';
                 });
+                
+                // Forçar recarregamento se for socproof1
+                if (img.src.includes('socproof1.jpg')) {
+                    setTimeout(() => {
+                        if (img.complete && img.naturalHeight === 0) {
+                            console.log('🔄 Tentando recarregar SocProof1...');
+                            img.src = img.src + '?t=' + Date.now();
+                        }
+                    }, 1000);
+                }
             });
         }
 
