@@ -23,17 +23,6 @@ const Footer = {
                             Nutricionista especialista em emagrecimento saudável que traduz nutrição 
                             em linguagem simples para pessoas reais.
                         </p>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" rel="noopener" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://youtube.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="social-link">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </div>
                     </div>
 
                     <div class="footer-section">
@@ -69,6 +58,17 @@ const Footer = {
                             <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span>Rio de Janeiro, RJ</span>
+                            </div>
+                            <div class="social-links-inline">
+                                <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://youtube.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="social-link-inline">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
