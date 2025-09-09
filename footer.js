@@ -47,26 +47,23 @@ const Footer = {
                     <div class="footer-section">
                         <h4>Contato</h4>
                         <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+55 24 99939-8229</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>contato@viniciusmoraes.com.br</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Rio de Janeiro, RJ</span>
-                            </div>
                             <div class="social-links-inline">
-                                <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" rel="noopener" class="social-link-inline">
+                                <a href="tel:+5524999398229" class="social-link-inline" title="Telefone">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="mailto:contato@viniciusmoraes.com.br" class="social-link-inline" title="E-mail">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nutri.vinimoraes/" target="_blank" rel="noopener" class="social-link-inline" title="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://youtube.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline">
+                                <a href="https://youtube.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline" title="YouTube">
                                     <i class="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="social-link-inline">
+                                <a href="https://www.facebook.com/viniciusmoraes" target="_blank" rel="noopener" class="social-link-inline" title="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://api.whatsapp.com/message/BIJUEGZ7FR6UO1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="social-link-inline" title="WhatsApp">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                             </div>
