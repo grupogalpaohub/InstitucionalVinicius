@@ -7,22 +7,22 @@ As imagens não estão carregando no site.
 
 ### 1. **Arquivos de Imagem Não Existem**
 Verifique se os seguintes arquivos estão no diretório raiz do projeto:
-- `Vinicius_1.jpeg`
-- `Antesxdepois.jpeg`
-- `socproof1.jpeg`
-- `socproof2.jpeg`
-- `socproof3.jpeg`
+- `Vinicius_1.jpg`
+- `Antesxdepois.jpg`
+- `socproof1.jpg`
+- `socproof2.jpg`
+- `socproof3.jpg`
 
 ### 2. **Caminhos Incorretos**
 As imagens estão sendo referenciadas com `./` (caminho relativo):
 ```html
-<img src="./Vinicius_1.jpeg" alt="Vinícius Moraes">
+<img src="./Vinicius_1.jpg" alt="Vinícius Moraes">
 ```
 
 ### 3. **Extensões de Arquivo**
 Verifique se as extensões estão corretas:
-- ✅ `.jpeg` (usado no código)
-- ❌ `.jpg` (pode causar erro)
+- ✅ `.jpg` (usado no código)
+- ❌ `.jpeg` (pode causar erro)
 - ❌ `.png` (não corresponde ao código)
 
 ## 🛠️ **Soluções Implementadas:**
@@ -43,11 +43,11 @@ Verifique se as extensões estão corretas:
 ### **Opção 1: Adicionar as Imagens**
 1. Coloque os arquivos de imagem no diretório raiz
 2. Certifique-se que os nomes estão exatos:
-   - `Vinicius_1.jpeg`
-   - `Antesxdepois.jpeg`
-   - `socproof1.jpeg`
-   - `socproof2.jpeg`
-   - `socproof3.jpeg`
+   - `Vinicius_1.jpg`
+   - `Antesxdepois.jpg`
+   - `socproof1.jpg`
+   - `socproof2.jpg`
+   - `socproof3.jpg`
 
 ### **Opção 2: Usar Placeholders Temporários**
 Se não tiver as imagens, os placeholders aparecerão automaticamente:
@@ -59,7 +59,7 @@ Se não tiver as imagens, os placeholders aparecerão automaticamente:
 Se as imagens estão em outra pasta, ajuste os caminhos:
 ```html
 <!-- Exemplo: imagens em pasta 'images' -->
-<img src="./images/Vinicius_1.jpeg" alt="Vinícius Moraes">
+<img src="./images/Vinicius_1.jpg" alt="Vinícius Moraes">
 ```
 
 ## 🔧 **Verificação Rápida:**
@@ -67,8 +67,8 @@ Se as imagens estão em outra pasta, ajuste os caminhos:
 1. **Abra o console do navegador** (F12)
 2. **Recarregue a página**
 3. **Procure por mensagens como:**
-   - `Imagem carregada: ./Vinicius_1.jpeg` ✅
-   - `Erro ao carregar imagem: ./Vinicius_1.jpeg` ❌
+   - `Imagem carregada: ./Vinicius_1.jpg` ✅
+   - `Erro ao carregar imagem: ./Vinicius_1.jpg` ❌
 
 ## 📱 **Teste Individual:**
 Abra `test-images.html` no navegador para testar cada imagem individualmente.
