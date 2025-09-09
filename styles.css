@@ -1689,6 +1689,18 @@ p {
     margin: 0;
 }
 
+.contact-info-section .contact-item p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-info-section .contact-item p a:hover {
+    color: var(--verde-salgia);
+    text-decoration: underline;
+}
+
 .contact-info-section .social-section {
     margin-top: 2rem;
     padding-top: 2rem;
