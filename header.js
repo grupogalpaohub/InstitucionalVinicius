@@ -18,7 +18,7 @@ const Header = {
                     </div>
                 </div>
                 <div class="nav-menu" id="nav-menu">
-                    <a href="inicio.html" class="nav-link">Início</a>
+                    <a href="index.html" class="nav-link">Início</a>
                     <a href="produtos.html" class="nav-link">Produtos</a>
                     <a href="contato.html" class="nav-link">Contato</a>
                     <a href="blog.html" class="nav-link">Blog</a>
@@ -139,7 +139,12 @@ const Header = {
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === currentPage) {
+            const linkHref = link.getAttribute('href');
+            
+            // Considerar index.html e raiz como página inicial
+            if (linkHref === 'index.html' && (currentPage === 'index.html' || currentPage === '' || currentPage === '/')) {
+                link.classList.add('active');
+            } else if (linkHref === currentPage) {
                 link.classList.add('active');
             }
         });

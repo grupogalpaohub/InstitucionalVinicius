@@ -14,7 +14,7 @@ Site institucional responsivo para o nutricionista Vinícius Moraes, especialist
 
 ```
 /
-├── inicio.html              # Página inicial
+├── index.html               # Página inicial (raiz do site)
 ├── produtos.html            # Página de produtos/serviços
 ├── contato.html             # Página de contato com formulário
 ├── blog.html                # Página do blog
