@@ -2443,6 +2443,17 @@ p {
     margin-bottom: 2rem;
 }
 
+.mission-cta {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.mission-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .mission-content h2 {
     color: var(--verde-escuro);
     margin-bottom: 2rem;
