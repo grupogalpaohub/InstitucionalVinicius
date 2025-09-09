@@ -48,9 +48,6 @@ const Footer = {
                         <h4>Contato</h4>
                         <div class="contact-info">
                             <div class="social-links-inline">
-                                <a href="tel:+5524999398229" class="social-link-inline" title="Telefone">
-                                    <i class="fas fa-phone"></i>
-                                </a>
                                 <a href="mailto:contato@viniciusmoraes.com.br" class="social-link-inline" title="E-mail">
                                     <i class="fas fa-envelope"></i>
                                 </a>
