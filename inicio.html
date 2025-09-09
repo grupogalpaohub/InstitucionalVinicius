@@ -151,6 +151,57 @@
             </div>
         </section>
 
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <div class="container">
+                <h2 class="text-center">Transformações Reais</h2>
+                <p class="text-center mb-4">
+                    Veja os resultados de quem confiou no meu trabalho
+                </p>
+                <div class="social-proof-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="SocProof1.png" alt="Transformação 1" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof2.png" alt="Transformação 2" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof3.png" alt="Transformação 3" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof4.png" alt="Transformação 4" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof5.png" alt="Transformação 5" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof6.png" alt="Transformação 6" class="proof-image">
+                        </div>
+                        <!-- Duplicar para loop infinito -->
+                        <div class="carousel-item">
+                            <img src="SocProof1.png" alt="Transformação 1" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof2.png" alt="Transformação 2" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof3.png" alt="Transformação 3" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof4.png" alt="Transformação 4" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof5.png" alt="Transformação 5" class="proof-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="SocProof6.png" alt="Transformação 6" class="proof-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CTA Section -->
         <section class="cta">
             <div class="container">
@@ -179,7 +230,47 @@
             Header.insertInto('header-container');
             Footer.insertInto('footer-container');
             Header.setActiveLink('inicio.html');
+            
+            // Inicializar carrossel de prova social
+            initSocialProofCarousel();
         });
+
+        // Função para inicializar o carrossel de prova social
+        function initSocialProofCarousel() {
+            const carouselTrack = document.querySelector('.carousel-track');
+            if (!carouselTrack) return;
+
+            // Pausar animação no hover
+            const carousel = document.querySelector('.social-proof-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', () => {
+                    carouselTrack.style.animationPlayState = 'paused';
+                });
+                
+                carousel.addEventListener('mouseleave', () => {
+                    carouselTrack.style.animationPlayState = 'running';
+                });
+            }
+
+            // Adicionar indicadores de loading para as imagens
+            const images = document.querySelectorAll('.proof-image');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                
+                img.addEventListener('error', function() {
+                    // Se a imagem não carregar, mostrar placeholder
+                    this.style.background = 'var(--gradient-primary)';
+                    this.style.display = 'flex';
+                    this.style.alignItems = 'center';
+                    this.style.justifyContent = 'center';
+                    this.style.color = 'white';
+                    this.style.fontSize = '1.2rem';
+                    this.alt = 'Imagem de transformação';
+                });
+            });
+        }
     </script>
 </body>
 </html>
