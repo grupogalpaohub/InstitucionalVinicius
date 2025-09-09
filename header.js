@@ -68,14 +68,62 @@ const Header = {
 
     // Efeito de scroll no navbar
     setupScrollEffect: function() {
-        window.addEventListener('scroll', () => {
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        const updateNavbar = () => {
             const navbar = document.getElementById(this.config.navbarId);
             if (navbar) {
-                if (window.scrollY > this.config.scrollThreshold) {
+                const currentScrollY = window.scrollY;
+                
+                // Adicionar classe scrolled quando rolar
+                if (currentScrollY > this.config.scrollThreshold) {
                     navbar.classList.add(this.config.scrolledClass);
                 } else {
                     navbar.classList.remove(this.config.scrolledClass);
                 }
+
+                // Esconder header ao rolar para baixo (apenas em mobile)
+                if (window.innerWidth <= this.config.mobileBreakpoint) {
+                    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                        // Rolando para baixo - esconder
+                        navbar.classList.add('hidden');
+                        // Fechar menu mobile se estiver aberto
+                        const navMenu = document.getElementById(this.config.navMenuId);
+                        const navToggle = document.getElementById(this.config.navToggleId);
+                        if (navMenu && navToggle) {
+                            navMenu.classList.remove('active');
+                            navToggle.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                        }
+                    } else {
+                        // Rolando para cima - mostrar
+                        navbar.classList.remove('hidden');
+                    }
+                } else {
+                    // Em desktop, sempre mostrar
+                    navbar.classList.remove('hidden');
+                }
+
+                lastScrollY = currentScrollY;
+            }
+            ticking = false;
+        };
+
+        const requestTick = () => {
+            if (!ticking) {
+                requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', requestTick, { passive: true });
+        
+        // Resetar estado ao redimensionar
+        window.addEventListener('resize', () => {
+            const navbar = document.getElementById(this.config.navbarId);
+            if (navbar && window.innerWidth > this.config.mobileBreakpoint) {
+                navbar.classList.remove('hidden');
             }
         });
     },
