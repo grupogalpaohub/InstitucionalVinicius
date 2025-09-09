@@ -85,7 +85,8 @@ const Header = {
 
                 // Esconder header ao rolar para baixo (apenas em mobile)
                 if (window.innerWidth <= this.config.mobileBreakpoint) {
-                    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                    // Só esconder se já rolou mais de 200px para evitar esconder muito cedo
+                    if (currentScrollY > lastScrollY && currentScrollY > 200) {
                         // Rolando para baixo - esconder
                         navbar.classList.add('hidden');
                         // Fechar menu mobile se estiver aberto
@@ -96,8 +97,8 @@ const Header = {
                             navToggle.classList.remove('active');
                             document.body.classList.remove('menu-open');
                         }
-                    } else {
-                        // Rolando para cima - mostrar
+                    } else if (currentScrollY < lastScrollY || currentScrollY < 100) {
+                        // Rolando para cima ou no topo - mostrar
                         navbar.classList.remove('hidden');
                     }
                 } else {
