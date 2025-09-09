@@ -28,7 +28,8 @@ const Footer = {
                     <div class="footer-section">
                         <h4>Navegação</h4>
                         <ul class="footer-links">
-                            <li><a href="inicio.html">Início</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="produtos.html">Produtos</a></li>
                             <li><a href="contato.html">Contato</a></li>
                             <li><a href="blog.html">Blog</a></li>
