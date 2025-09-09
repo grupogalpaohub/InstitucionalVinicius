@@ -27,38 +27,13 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles-contato.css">
+    
+    <!-- Header Object -->
+    <script src="header-index-d.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="logo-text">
-                    <h3>Vinícius Moraes</h3>
-                    <span>Emagrecimento Saudável</span>
-                </div>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="produtos.html" class="nav-link">Produtos</a>
-                <a href="contato.html" class="nav-link">Contato</a>
-            </div>
-            <div class="nav-cta">
-                <a href="#consulta" class="btn btn-primary">
-                    <i class="fas fa-calendar-alt"></i>
-                    Consulta Gratuita
-                </a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Container -->
+    <div id="header-container"></div>
 
     <!-- Main Content -->
     <main class="main">
@@ -87,7 +62,7 @@
         </section>
 
         <!-- Contact Form Section -->
-        <section id="contato" class="contact-section">
+        <section id="consulta" class="contact-section">
             <div class="container">
                 <div class="contact-wrapper">
                     <!-- Form -->
@@ -421,6 +396,34 @@
 
     <!-- Scripts -->
     <script src="script-contato.js"></script>
-    <script src="script-pages.js"></script>
+    
+    <!-- Apply Header-Index-D Object -->
+    <script>
+        // Aguardar o carregamento do DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            // Aplicar o header do Index-D
+            HeaderIndexD.insertInto('header-container');
+            
+            // Atualizar links específicos para a página de contato
+            HeaderIndexD.updateLinks([
+                { href: 'index.html', text: 'Home', icon: 'fas fa-home' },
+                { href: 'produtos.html', text: 'Produtos', icon: 'fas fa-box' },
+                { href: 'contato.html', text: 'Contato', icon: 'fas fa-envelope' }
+            ]);
+            
+            // Atualizar CTA para apontar para a seção de consulta na página
+            HeaderIndexD.updateCTA({
+                href: '#consulta',
+                text: 'Consulta Gratuita',
+                icon: 'fas fa-calendar-alt'
+            });
+            
+            // Atualizar logo se necessário
+            HeaderIndexD.updateLogo({
+                title: 'Vinícius Moraes',
+                subtitle: 'Emagrecimento Saudável'
+            });
+        });
+    </script>
 </body>
 </html>
