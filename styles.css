@@ -2329,3 +2329,180 @@ p {
         font-size: 1.1rem;
     }
 }
+
+/* Página Sobre - Estilos Específicos */
+.about-story {
+    padding: var(--section-padding);
+    background: var(--bege-claro);
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-text h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--cinza-grafite);
+}
+
+.story-text p strong {
+    color: var(--verde-salgia);
+    font-weight: 700;
+}
+
+.methodology {
+    padding: var(--section-padding);
+    background: white;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.methodology-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-card);
+    text-align: center;
+    transition: var(--transition-spring);
+    position: relative;
+    overflow: hidden;
+}
+
+.methodology-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.methodology-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.methodology-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+    transition: var(--transition-spring);
+}
+
+.methodology-card:hover .methodology-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.methodology-card h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.methodology-card p {
+    color: var(--cinza-grafite);
+    line-height: 1.6;
+}
+
+.mission {
+    padding: var(--section-padding);
+    background: var(--bege-claro);
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-content h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--cinza-grafite);
+}
+
+.mission-content p strong {
+    color: var(--verde-salgia);
+    font-weight: 700;
+}
+
+.mission-highlight {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-card);
+    margin-top: 2rem;
+    border-left: 4px solid var(--verde-salgia);
+}
+
+.mission-highlight p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 0;
+    color: var(--verde-escuro);
+}
+
+.mission-highlight strong {
+    color: var(--verde-salgia);
+    font-weight: 700;
+}
+
+/* Responsividade para página Sobre */
+@media (max-width: 768px) {
+    .story-text h2,
+    .mission-content h2 {
+        font-size: 2rem;
+    }
+    
+    .story-text p,
+    .mission-content p {
+        font-size: 1rem;
+    }
+    
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .methodology-card {
+        padding: 2rem;
+    }
+    
+    .mission-highlight {
+        padding: 1.5rem;
+    }
+    
+    .mission-highlight p {
+        font-size: 1.1rem;
+    }
+}

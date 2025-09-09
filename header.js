@@ -19,6 +19,7 @@ const Header = {
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <a href="index.html" class="nav-link">Início</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
                     <a href="produtos.html" class="nav-link">Produtos</a>
                     <a href="contato.html" class="nav-link">Contato</a>
                     <a href="blog.html" class="nav-link">Blog</a>

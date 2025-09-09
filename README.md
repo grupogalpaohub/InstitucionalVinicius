@@ -15,6 +15,7 @@ Site institucional responsivo para o nutricionista Vinícius Moraes, especialist
 ```
 /
 ├── index.html               # Página inicial (raiz do site)
+├── sobre.html               # Página sobre o Vinícius
 ├── produtos.html            # Página de produtos/serviços
 ├── contato.html             # Página de contato com formulário
 ├── blog.html                # Página do blog
@@ -70,6 +71,13 @@ Site institucional responsivo para o nutricionista Vinícius Moraes, especialist
 - Serviços oferecidos
 - Estatísticas e números
 - Call-to-action final
+
+#### Sobre
+- História pessoal do Vinícius
+- Experiência no fisiculturismo
+- Metodologia de trabalho
+- Missão e valores
+- Call-to-action para consulta
 
 #### Produtos
 - 3 produtos principais com preços
