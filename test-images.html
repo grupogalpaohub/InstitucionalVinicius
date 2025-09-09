@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; border: 2px solid #ccc; padding: 10px; }
+        .image-test img { max-width: 200px; height: auto; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Carregamento de Imagens</h1>
+    
+    <div class="image-test">
+        <h3>Vinicius_1.jpeg</h3>
+        <img src="Vinicius_1.jpeg" alt="Teste Vinícius" onload="this.nextElementSibling.innerHTML='✅ Carregada com sucesso!';" onerror="this.nextElementSibling.innerHTML='❌ Erro ao carregar';">
+        <div class="status"></div>
+    </div>
+    
+    <div class="image-test">
+        <h3>Antesxdepois.jpeg</h3>
+        <img src="Antesxdepois.jpeg" alt="Teste Antes/Depois" onload="this.nextElementSibling.innerHTML='✅ Carregada com sucesso!';" onerror="this.nextElementSibling.innerHTML='❌ Erro ao carregar';">
+        <div class="status"></div>
+    </div>
+    
+    <div class="image-test">
+        <h3>socproof1.jpeg</h3>
+        <img src="socproof1.jpeg" alt="Teste Prova Social 1" onload="this.nextElementSibling.innerHTML='✅ Carregada com sucesso!';" onerror="this.nextElementSibling.innerHTML='❌ Erro ao carregar';">
+        <div class="status"></div>
+    </div>
+    
+    <div class="image-test">
+        <h3>socproof2.jpeg</h3>
+        <img src="socproof2.jpeg" alt="Teste Prova Social 2" onload="this.nextElementSibling.innerHTML='✅ Carregada com sucesso!';" onerror="this.nextElementSibling.innerHTML='❌ Erro ao carregar';">
+        <div class="status"></div>
+    </div>
+    
+    <div class="image-test">
+        <h3>socproof3.jpeg</h3>
+        <img src="socproof3.jpeg" alt="Teste Prova Social 3" onload="this.nextElementSibling.innerHTML='✅ Carregada com sucesso!';" onerror="this.nextElementSibling.innerHTML='❌ Erro ao carregar';">
+        <div class="status"></div>
+    </div>
+    
+    <h2>Verificação de Arquivos no Servidor</h2>
+    <p>Verifique se os seguintes arquivos existem no diretório raiz:</p>
+    <ul>
+        <li>Vinicius_1.jpeg</li>
+        <li>Antesxdepois.jpeg</li>
+        <li>socproof1.jpeg</li>
+        <li>socproof2.jpeg</li>
+        <li>socproof3.jpeg</li>
+    </ul>
+</body>
+</html>
