@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #F8F8F8;
 }
 
 /* Variáveis CSS */
@@ -37,7 +37,7 @@ body {
     --laranja-suave: #FFB74D;
     --azul-suave: #64B5F6;
     --roxo-suave: #BA68C8;
-    --branco: #FFFFFF;
+    --branco: #F8F8F8;
     --cinza-claro: #F8F9FA;
     --cinza-medio: #6C757D;
     
@@ -148,7 +148,7 @@ p {
 
 .btn-primary {
     background: var(--gradient-primary);
-    color: white;
+    color: #F8F8F8;
     box-shadow: var(--shadow-button);
     border: 2px solid transparent;
 }
@@ -172,7 +172,7 @@ p {
 
 .btn-secondary:hover {
     background: var(--gradient-primary);
-    color: white;
+    color: #F8F8F8;
     transform: translateY(-3px) scale(1.05);
     box-shadow: var(--shadow-hover);
     border-color: transparent;
@@ -238,7 +238,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F8F8F8;
     font-size: 1.3rem;
     box-shadow: var(--shadow-button);
     transition: var(--transition-spring);
@@ -337,7 +337,7 @@ p {
 /* Footer */
 .footer {
     background: var(--verde-escuro);
-    color: white;
+    color: #F8F8F8;
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
@@ -350,7 +350,7 @@ p {
 }
 
 .footer-section h4 {
-    color: white;
+    color: #F8F8F8;
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
@@ -367,7 +367,7 @@ p {
 }
 
 .footer-logo .logo-text h3 {
-    color: white;
+    color: #F8F8F8;
     margin: 0;
 }
 
@@ -493,7 +493,7 @@ p {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: white;
+        background: #F8F8F8;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -800,7 +800,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F8F8F8;
     font-size: 3.5rem;
     text-align: center;
     box-shadow: var(--shadow-heavy);
@@ -831,7 +831,7 @@ p {
 }
 
 .hero-placeholder p {
-    color: white;
+    color: #F8F8F8;
     margin-top: 1rem;
     font-size: 1.1rem;
 }
@@ -952,7 +952,7 @@ p {
 }
 
 .service-card {
-    background: white;
+    background: #F8F8F8;
     padding: 2.5rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
@@ -994,7 +994,7 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    color: white;
+    color: #F8F8F8;
     font-size: 2.2rem;
     box-shadow: var(--shadow-button);
     transition: var(--transition-spring);
@@ -1035,13 +1035,13 @@ p {
 
 .cta {
     background: var(--verde-escuro);
-    color: white;
+    color: #F8F8F8;
     padding: var(--section-padding);
     text-align: center;
 }
 
 .cta h2 {
-    color: white;
+    color: #F8F8F8;
     margin-bottom: 1rem;
 }
 
@@ -1115,7 +1115,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F8F8F8;
     font-size: 1.2rem;
     font-weight: 600;
     /* Melhorar carregamento */
@@ -1199,7 +1199,7 @@ p {
 }
 
 .product-card {
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
     margin-bottom: 3rem;
@@ -1255,7 +1255,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    color: white;
+    color: #F8F8F8;
     font-size: 1.8rem;
     box-shadow: var(--shadow-button);
     transition: var(--transition-spring);
@@ -1351,7 +1351,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F8F8F8;
     font-size: 2.8rem;
     text-align: center;
     box-shadow: var(--shadow-heavy);
@@ -1377,7 +1377,7 @@ p {
 }
 
 .product-placeholder p {
-    color: white;
+    color: #F8F8F8;
     margin-top: 1rem;
     font-size: 1rem;
 }
@@ -1395,7 +1395,7 @@ p {
 .comparison-table table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-light);
@@ -1410,7 +1410,7 @@ p {
 
 .comparison-table th {
     background: var(--verde-escuro);
-    color: white;
+    color: #F8F8F8;
     font-weight: 600;
     text-align: center;
 }
@@ -1470,7 +1470,7 @@ p {
 }
 
 .contact-form-container {
-    background: white;
+    background: #F8F8F8;
     padding: 3rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
@@ -1539,7 +1539,7 @@ p {
     font-family: var(--font-texto);
     font-size: var(--text-size);
     transition: var(--transition-spring);
-    background: white;
+    background: #F8F8F8;
     position: relative;
 }
 
@@ -1603,7 +1603,7 @@ p {
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
     content: '✓';
-    color: white;
+    color: #F8F8F8;
     font-weight: bold;
     font-size: 12px;
 }
@@ -1637,7 +1637,7 @@ p {
 .contact-info-section {
     margin-top: 4rem;
     padding: 3rem 2rem;
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
     max-width: 800px;
@@ -1770,7 +1770,7 @@ p {
 
 .social-link-inline:hover {
     background: var(--verde-salgia);
-    color: white;
+    color: #F8F8F8;
     transform: translateY(-3px) scale(1.1);
     box-shadow: var(--shadow-glow);
 }
@@ -1799,7 +1799,7 @@ p {
 
 .social-link-inline:hover .fab,
 .social-link-inline:hover .fas {
-    color: white;
+    color: #F8F8F8;
 }
 
 .social-section {
@@ -1825,7 +1825,7 @@ p {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1rem;
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius);
     text-decoration: none;
     color: var(--cinza-grafite);
@@ -1835,7 +1835,7 @@ p {
 
 .social-links .social-link:hover {
     background: var(--verde-salgia);
-    color: white;
+    color: #F8F8F8;
     transform: translateY(-2px);
 }
 
@@ -1850,7 +1850,7 @@ p {
 }
 
 .faq-item {
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius-lg);
     margin-bottom: 1rem;
     overflow: hidden;
@@ -2029,13 +2029,13 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F8F8F8;
     font-size: 2rem;
     text-align: center;
 }
 
 .article-placeholder p {
-    color: white;
+    color: #F8F8F8;
     margin-top: 1rem;
     font-size: 1rem;
 }
@@ -2061,7 +2061,7 @@ p {
 
 .article-category {
     background: var(--verde-salgia);
-    color: white;
+    color: #F8F8F8;
     padding: 0.25rem 0.75rem;
     border-radius: var(--border-radius-full);
     font-size: 0.8rem;
@@ -2085,7 +2085,7 @@ p {
 }
 
 .category-card {
-    background: white;
+    background: #F8F8F8;
     padding: 2.5rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
@@ -2127,7 +2127,7 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    color: white;
+    color: #F8F8F8;
     font-size: 2.2rem;
     box-shadow: var(--shadow-button);
     transition: var(--transition-spring);
@@ -2186,7 +2186,7 @@ p {
 }
 
 .article-card {
-    background: white;
+    background: #F8F8F8;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
     overflow: hidden;
@@ -2278,13 +2278,13 @@ p {
 
 .newsletter {
     background: var(--verde-escuro);
-    color: white;
+    color: #F8F8F8;
     padding: var(--section-padding);
     text-align: center;
 }
 
 .newsletter h2 {
-    color: white;
+    color: #F8F8F8;
     margin-bottom: 1rem;
 }
 
@@ -2414,7 +2414,7 @@ p {
 }
 
 .content-main {
-    background: white;
+    background: #F8F8F8;
     padding: 3rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-light);
@@ -2541,7 +2541,7 @@ p {
 
 .methodology {
     padding: var(--section-padding);
-    background: white;
+    background: #F8F8F8;
 }
 
 .methodology-grid {
@@ -2552,7 +2552,7 @@ p {
 }
 
 .methodology-card {
-    background: white;
+    background: #F8F8F8;
     padding: 2.5rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
@@ -2587,7 +2587,7 @@ p {
     justify-content: center;
     margin: 0 auto 1.5rem;
     font-size: 2rem;
-    color: white;
+    color: #F8F8F8;
     transition: var(--transition-spring);
 }
 
@@ -2652,7 +2652,7 @@ p {
 }
 
 .mission-highlight {
-    background: white;
+    background: #F8F8F8;
     padding: 2rem;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
